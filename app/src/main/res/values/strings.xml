@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CriminalIntent</string>
+
+    <string name="crime_title_hint">Enter a title for the crime.</string>
+    <string name="crime_title_label">Title</string>
+    <string name="crime_details_label">Details</string>
+    <string name="crime_solved_label">Solved</string>
+    <string name="new_crime">New crime</string>
+
+
+
+    <string name="crime_title_blank_error">Title cannot be blank</string>
+    <string name="there_are_no_crimes">There are no crimes</string>
+    <string name="add_firs_crime">add</string>
+    <string name="delete_current_crime">delete current crime</string>
+
+    <string name="crime_suspect_text">Choose Suspect</string>
+    <string name="crime_report_text">Send Crime Report</string>
+    <string name="crime_report">%1$s! The crime was discovered on %2$s. %3$s, and %4$s</string>
+    <string name="crime_report_solved">The case is solved</string>
+    <string name="crime_report_unsolved">The case is not solved</string>
+    <string name="crime_report_no_suspect">there is no suspect</string>
+    <string name="crime_report_suspect">the suspect is %s</string>
+    <string name="crime_report_subject">CriminalIntent crime report</string>
+    <string name="send_report">Send crime report via</string>
+    <string name="call_suspect">Call suspect</string>
+
+    <string name="permission_did_not_granted">Permission did not granted</string>
+
+
+</resources>
