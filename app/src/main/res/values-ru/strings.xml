@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">CriminalIntent</string>
+
+    <string name="crime_title_hint">Введите заголовок преступления.</string>
+    <string name="crime_title_label">Заголовок</string>
+    <string name="crime_details_label">Детали</string>
+    <string name="crime_solved_label">Раскрыто</string>
+    <string name="new_crime">Новое преступление</string>
+
+
+
+    <string name="crime_title_blank_error">Заголовок не может быть пустым</string>
+    <string name="there_are_no_crimes">Нет преступлений</string>
+    <string name="add_firs_crime">добавить</string>
+    <string name="delete_current_crime">удалить текущее преступление</string>
+
+    <string name="crime_suspect_text">Выбрать Подозреваемого</string>
+    <string name="crime_report_text">Отправить отчет о преступлении</string>
+    <string name="crime_report">%1$s! Преступление было обнаружено %2$s. %3$s, и %4$s</string>
+    <string name="crime_report_solved">Дело раскрыто</string>
+    <string name="crime_report_unsolved">Дело не раскрыто</string>
+    <string name="crime_report_no_suspect">без подозреваемого</string>
+    <string name="crime_report_suspect">подозреваемый: %s</string>
+    <string name="crime_report_subject">CriminalIntent отчет о преступлении</string>
+    <string name="send_report">Отправить отчет о преступлении с помощью</string>
+    <string name="call_suspect">Позвонить подозреваемому</string>
+
+    <string name="permission_did_not_granted">Разрешения не предоставлены</string>
+    <string name="close_photo">закрыть</string>
+    <string name="crime_photo_button_description">Сделать фото преступления</string>
+    <string name="crime_photo_no_image_description">Фото преступления (не установлено)</string>
+    <string name="crime_photo_image_description">Фото преступления (установлено)</string>
+    <string name="requires_police">" Требуется (требовалась) полиция"</string>
+    <string name="solved_icon_description">Преступление раскрыто</string>
+
+
+</resources>

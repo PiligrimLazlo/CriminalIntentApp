@@ -88,6 +88,12 @@ class CrimeDetailsFragment : Fragment() {
 
     private var photoName: String? = null
 
+    override fun onResume() {
+        super.onResume()
+        if (photoName != null)
+            binding.crimePhoto.announceForAccessibility(getString(R.string.crime_photo_image_description))
+    }
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -369,10 +375,14 @@ class CrimeDetailsFragment : Fragment() {
                     )
                     binding.crimePhoto.setImageBitmap(scaleBitmap)
                     binding.crimePhoto.tag = photoFileName
+                    binding.crimePhoto.contentDescription =
+                        getString(R.string.crime_photo_image_description)
                 }
             } else {
                 binding.crimePhoto.setImageBitmap(null)
                 binding.crimePhoto.tag = null
+                binding.crimePhoto.contentDescription =
+                    getString(R.string.crime_photo_no_image_description)
             }
         }
     }

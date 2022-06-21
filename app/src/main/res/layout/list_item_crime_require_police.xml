@@ -14,7 +14,7 @@
         android:id="@+id/requiresPoliceTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="(requires(-ed) police)"
+        android:text="@string/requires_police"
         android:layout_marginStart="24dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"

@@ -16,7 +16,7 @@ data class Crime(
     val photoFileName: String? = null
 ) {
 
-    fun  isRequiresPolice(): Int {
+    fun isRequiresPolice(): Int {
         val random = (0..10).random()
         return if (random > 3)
             NOT_REQUIRES_POLICE
@@ -25,7 +25,12 @@ data class Crime(
     }
 
     fun getFormattedStringCrimeDate(): String {
-        val sdf = SimpleDateFormat("MMM dd, yyyy", Locale("default"))
+        val pattern = if (Locale.getDefault() == Locale("en")) {
+            "MMM dd, yyyy"
+        } else {
+            "dd.MM.yy"
+        }
+        val sdf = SimpleDateFormat(pattern, Locale("default"))
         return sdf.format(date)
     }
 

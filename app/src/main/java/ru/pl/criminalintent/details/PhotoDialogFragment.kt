@@ -42,7 +42,7 @@ class PhotoDialogFragment : DialogFragment() {
 
         return AlertDialog.Builder(requireContext())
             .setView(imageView)
-            .setNegativeButton("close", null)
+            .setNegativeButton(getString(R.string.close_photo), null)
             .show()
     }
 
