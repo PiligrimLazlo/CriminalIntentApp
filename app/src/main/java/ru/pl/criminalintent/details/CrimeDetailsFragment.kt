@@ -136,6 +136,9 @@ class CrimeDetailsFragment : Fragment() {
             val captureImageIntent = takePhoto.contract.createIntent(requireContext(), Uri.EMPTY)
             crimeCamera.isEnabled = canResolveIntent(captureImageIntent)
 
+            crimePhoto.setOnClickListener {
+                onPhotoClick()
+            }
         }
 
 
@@ -371,6 +374,15 @@ class CrimeDetailsFragment : Fragment() {
                 binding.crimePhoto.setImageBitmap(null)
                 binding.crimePhoto.tag = null
             }
+        }
+    }
+
+    private fun onPhotoClick() {
+        val photoName = binding.crimePhoto.tag
+        if (photoName != null) {
+            val photoPath =
+                File(requireContext().applicationContext.filesDir, (photoName as String)).path
+            findNavController().navigate(CrimeDetailsFragmentDirections.photoZoom(photoPath))
         }
     }
 
